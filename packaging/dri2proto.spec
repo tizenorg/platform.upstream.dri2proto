@@ -30,6 +30,7 @@ make %{?jobs:-j%jobs}
 %remove_docs
 
 %files
+%license COPYING
 %defattr(-,root,root,-)
 %{_includedir}/X11/extensions/*.h
 %{_datadir}/pkgconfig/*.pc
