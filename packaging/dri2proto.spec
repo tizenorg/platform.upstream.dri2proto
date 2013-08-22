@@ -20,7 +20,7 @@ cp %{SOURCE1001} .
 
 %build
 
-%configure --disable-static \
+%reconfigure --disable-static \
              --libdir=%{_datadir} \
              --without-xmlto
 
