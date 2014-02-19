@@ -1,3 +1,5 @@
+%bcond_with x
+
 Name:     dri2proto
 Summary:  X.Org X11 Protocol dri2proto
 Version:  2.8
@@ -10,6 +12,10 @@ Source1001: 	dri2proto.manifest
 
 BuildRequires: pkgconfig
 BuildRequires: pkgconfig(xorg-macros)
+
+%if !%{with x}
+ExclusiveArch:
+%endif
 
 %description
 %{summary}
